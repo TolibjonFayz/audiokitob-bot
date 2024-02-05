@@ -6,7 +6,7 @@ const { keyboards } = require("../lib/keyboards");
 const composer = new Composer();
 
 composer.start((ctx) => {
-  ctx.reply(messages["start"], keyboards["start"]);
+  ctx.reply("salom " + ctx.from.first_name);
 });
 
 bot.action("help", (ctx) => {
