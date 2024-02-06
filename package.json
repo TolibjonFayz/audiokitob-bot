@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node index.js",
-    "dev": "nodemon index.js",
-    "start": "node index.js",
-    "build": "npm run clean && npm ci --production"
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "Tolibjonfayz",
