@@ -4,9 +4,9 @@
   "description": "The test telegram bot vebinar",
   "main": "index.js",
   "scripts": {
-    "test": "node app.js",
-    "dev": "nodemon app.js",
-    "start": "node app.js",
+    "test": "node index.js",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
     "build": "npm run clean && npm ci --production"
   },
   "keywords": [],
