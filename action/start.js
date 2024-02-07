@@ -1,16 +1,36 @@
 const { bot } = require("../core/bot");
-const { Composer } = require("telegraf");
-const { messages } = require("../lib/messages");
-const { keyboards } = require("../lib/keyboards");
+const User = require("../db/User");
+const { startkeyboard } = require("../lib/ilsomiykeyboards");
 
-const composer = new Composer();
+bot.start(async (ctx) => {
+  ctx.replyWithHTML(
+    "Assalomu alaykum. <b>Audio Kitob</b> botga xush kelibsiz.\n\nBu botda siz har xil turkumdagi audiokitoblarni topishingiz mumkin.\nPastdagi bo`limlardan birini tanlang 👇. \n\nYordam - /help",
+    startkeyboard
+  );
+  try {
+    const newUser = {
+      userid: ctx.from.id,
+      username: ctx.from.username,
+      first_name: ctx.from.first_name,
+    };
 
-composer.start((ctx) => {
-  ctx.reply("salom " + ctx.from.first_name);
+    const isExists = await User.findOne({ userid: newUser.userid });
+    if (isExists == null) {
+      await User.create(newUser)
+        .then(async (res) => {
+          const count = await User.find();
+          ctx.telegram.sendMessage(
+            process.env.ADMIN,
+            `${newUser.first_name} bazaga qo'shildi.\nBazadagi jami foydalanuvchilar soni ${count.length}ta`
+          );
+        })
+        .catch((err) => console.log(err));
+    } else {
+      console.log("Eski user start bosdi");
+    }
+  } catch (err) {
+    console.log(err);
+    ctx.replyWithHTML(`<b>Ko'zda tutilmagan xatolik</b> \n ${err}`);
+    console.log(`<b>Ko'zda tutilmagan xatolik</b> \n ${err}`);
+  }
 });
-
-bot.action("help", (ctx) => {
-  ctx.editMessageText(messages["help"]);
-});
-
-bot.use(composer.middleware());

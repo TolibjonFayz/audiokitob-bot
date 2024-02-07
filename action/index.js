@@ -1,5 +1,5 @@
 require("./start");
 require("./help");
-require("./author");
-require("./photo");
-require("./inline");
+require("./islomiykitoblar");
+require("./quron");
+require("./ozbadab");
