@@ -1108,41 +1108,41 @@ bot.hears("🎧 Ey qizim", async (ctx) => {
 });
 
 // // // // // // // // // // // // // // // // BUGUN BOMDOD O'QIDINGIZMI
-bot.hears("🎧 Bugun bomdod o'qidingizmi", (ctx) => {
+bot.hears("🎧 Bugun bomdod o'qidingizmi", async (ctx) => {
   const photo = "https://t.me/audio_toplam/53";
   const link = "https://t.me/audio_toplam/54";
 
-  ctx.replyWithPhoto(photo, {
+  await ctx.replyWithPhoto(photo, {
     caption:
       "🎧 Bugun bomdod o'qidingizmi\n✍🏻 Rog'ib Sirjoniy\n🎙 Shams Solih\nManba: @audio_toplam",
   });
-  ctx.replyWithAudio(link, {
+  await ctx.replyWithAudio(link, {
     caption: "🎧 Bugun bomdod o'qidingizmi  to'liq\nManba: @audio_toplam",
   });
 });
 
 // // // // // // // // // // // // // // // // // // // // SO'NGGI TO'FON
-bot.hears("🎧 So`nggi to`fon", (ctx) => {
+bot.hears("🎧 So`nggi to`fon", async (ctx) => {
   const photo = "https://t.me/audio_toplam/21";
   const link1 = "https://t.me/audio_toplam/22";
 
-  ctx.replyWithPhoto(photo, {
+  await ctx.replyWithPhoto(photo, {
     caption: "🎧 So`nggi to`fon \n✍🏻Ahmad Lutfiy Qozonchi\n🎙Shams Solih",
   });
-  ctx.replyWithAudio(link1, {
+  await ctx.replyWithAudio(link1, {
     caption: "🎧 So`nggi to`fon to'liq\nManba: @shams_solih",
   });
 });
 
 // // // // // // // // // // // // // // // // // // // // VIDO CHO'QQISI
-bot.hears("🎧 Vido cho`qqisi", (ctx) => {
+bot.hears("🎧 Vido cho`qqisi", async (ctx) => {
   const photo = "https://t.me/audio_toplam/27";
   const link1 = "https://t.me/audio_toplam/28";
 
-  ctx.replyWithPhoto(photo, {
+  await ctx.replyWithPhoto(photo, {
     caption: "🎧 Vido cho`qqisi \n✍🏻Mehmet Olaqosh\n🎙Shams Solih",
   });
-  ctx.replyWithAudio(link1, {
+  await ctx.replyWithAudio(link1, {
     caption: "🎧 Vido cho`qqisi to'liq\nManba: @shams_solih",
   });
 });
@@ -1167,14 +1167,124 @@ bot.hears("🎧 Ar-Rahiq Al-Maxtum", async (ctx) => {
 });
 
 // // // // // // // // // // // // // // // // // // // // VIDO CHO'QQISI
-bot.hears("🎧 Riyozus solihiyn", (ctx) => {
+bot.hears("🎧 Riyozus solihiyn", async (ctx) => {
   const photo = "https://t.me/audio_toplam/43";
   const link1 = "https://t.me/audio_toplam/44";
 
-  ctx.replyWithPhoto(photo, {
+  await ctx.replyWithPhoto(photo, {
     caption: "🎧 Riyozus solihiyn \n✍🏻Mehmet Olaqosh\n🎙Shams Solih",
   });
-  ctx.replyWithAudio(link1, {
+  await ctx.replyWithAudio(link1, {
     caption: "🎧 Riyozus solihiyn to'liq\nManba: @audio_toplam",
+  });
+});
+
+// // // // // // // // // // // // // // // // Islom diniga umumiy ta’rif
+bot.hears("🎧 Islom diniga umumiy ta’rif", async (ctx) => {
+  const photo =
+    "https://th.bing.com/th/id/OIP.AWAonbzAG63JE-jsF53uHAHaEK?rs=1&pid=ImgDetMain";
+  const link1 = "https://t.me/audiokitoblar_islom/772";
+  const link2 = "https://t.me/audiokitoblar_islom/773";
+  const link3 = "https://t.me/audiokitoblar_islom/774";
+  const link4 = "https://t.me/audiokitoblar_islom/775";
+  const link5 = "https://t.me/audiokitoblar_islom/776";
+  const link6 = "https://t.me/audiokitoblar_islom/777";
+  const link7 = "https://t.me/audiokitoblar_islom/778";
+  const link8 = "https://t.me/audiokitoblar_islom/780";
+  const link9 = "https://t.me/audiokitoblar_islom/781";
+  const link10 = "https://t.me/audiokitoblar_islom/782";
+  const link11 = "https://t.me/audiokitoblar_islom/783";
+  const link12 = "https://t.me/audiokitoblar_islom/784";
+  const link13 = "https://t.me/audiokitoblar_islom/785";
+  const link14 = "https://t.me/audiokitoblar_islom/786";
+  const link15 = "https://t.me/audiokitoblar_islom/787";
+  const link16 = "https://t.me/audiokitoblar_islom/788";
+  const link17 = "https://t.me/audiokitoblar_islom/789";
+  const link18 = "https://t.me/audiokitoblar_islom/790";
+  const link19 = "https://t.me/audiokitoblar_islom/792";
+  const link20 = "https://t.me/audiokitoblar_islom/793";
+
+  await ctx.replyWithPhoto(photo, {
+    caption: "🎧 Islom diniga umumiy ta'rif \n✍🏻Ali Tantoviy\n🎙Shams Solih",
+  });
+  await ctx.replyWithAudio(link1, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 1-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link2, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 2-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link3, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 3-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link4, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 4-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link5, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 5-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link6, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 6-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link7, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 7-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link8, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 8-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link9, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 9-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link10, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 10-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link11, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 11-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link12, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 12-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link13, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 13-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link14, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 14-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link15, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 15-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link16, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 16-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link17, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 17-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link18, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 18-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link19, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 19-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link20, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 20-qism\nManba: @audiokitoblar_islom",
   });
 });
