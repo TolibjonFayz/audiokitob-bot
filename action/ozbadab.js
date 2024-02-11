@@ -2,7 +2,7 @@ const { bot } = require("../core/bot");
 const {
   ozbmainKeyboard,
   dunyoniishlarikey,
-} = require("../lib/ozbekadabKeyboards");
+} = require("../lib/ozbekadabkeyboards");
 
 bot.hears("🎧 O`zbek adabiyoti", (ctx) => {
   ctx.reply("Tanlang 👇", ozbmainKeyboard);
