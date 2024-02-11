@@ -3,3 +3,4 @@ require("./help");
 require("./islomiykitoblar");
 require("./quron");
 require("./ozbadab");
+require("./admin");
