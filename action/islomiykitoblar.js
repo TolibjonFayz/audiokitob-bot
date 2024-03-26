@@ -1203,6 +1203,9 @@ bot.hears("🎧 Islom diniga umumiy ta’rif", async (ctx) => {
   const link18 = "https://t.me/audiokitoblar_islom/790";
   const link19 = "https://t.me/audiokitoblar_islom/792";
   const link20 = "https://t.me/audiokitoblar_islom/793";
+  const link21 = "https://t.me/audiokitoblar_islom/794";
+  const link22 = "https://t.me/audiokitoblar_islom/795";
+  const link23 = "https://t.me/audiokitoblar_islom/796";
 
   await ctx.replyWithPhoto(photo, {
     caption: "🎧 Islom diniga umumiy ta'rif \n✍🏻Ali Tantoviy\n🎙Shams Solih",
@@ -1286,5 +1289,17 @@ bot.hears("🎧 Islom diniga umumiy ta’rif", async (ctx) => {
   await ctx.replyWithAudio(link20, {
     caption:
       "🎧 Islom diniga umumiy ta'rif 20-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link21, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 21-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link22, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 22-qism\nManba: @audiokitoblar_islom",
+  });
+  await ctx.replyWithAudio(link23, {
+    caption:
+      "🎧 Islom diniga umumiy ta'rif 23-qism\nManba: @audiokitoblar_islom",
   });
 });
